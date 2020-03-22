@@ -3,7 +3,7 @@ services:
   nginx:
     build: docker/nginx
     ports:
-      - "8181:80"
+      - "8182:80"
     volumes:
       - ./docker/nginx/logs/:/var/log/nginx
       - ./project:/var/www/project
