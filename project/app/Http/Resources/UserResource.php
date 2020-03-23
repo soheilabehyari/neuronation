@@ -19,7 +19,7 @@ class UserResource extends JsonResource
     {
         return [
             'session' => $this->session_id,
-            'score' => (int)$this->score,
+            'score' => (int) $this->score,
             'date' => Carbon::parse($this->created_at)->format('U'),
         ];
     }

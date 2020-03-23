@@ -4,7 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Score extends Model {
+class Score extends Model
+{
     /**
      * The attributes that are mass assignable.
      *
@@ -22,5 +23,4 @@ class Score extends Model {
     {
         return $this->hasOne('App\Model\Session');
     }
-
 }

@@ -4,7 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Exercise extends Model {
+class Exercise extends Model
+{
     /**
      * The attributes that are mass assignable.
      *
@@ -38,5 +39,4 @@ class Exercise extends Model {
     {
         return $this->belongsToMany('App\Model\SessionExercise');
     }
-
 }

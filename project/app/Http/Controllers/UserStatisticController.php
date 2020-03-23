@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Resources\UserResource;
 use App\Repositories\UserRepository;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Http\Response;
 use Laravel\Lumen\Http\ResponseFactory;
 
@@ -28,7 +30,7 @@ class UserStatisticController extends Controller
      *
      * @param Request $request
      * @param $userId
-     * @return
+     * @return JsonResponse|AnonymousResourceCollection
      */
     public function getUserHistory(Request $request, $userId)
     {

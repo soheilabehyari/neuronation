@@ -4,7 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SessionExercise extends Model {
+class SessionExercise extends Model
+{
 
     public $timestamps = false;
 
@@ -16,6 +17,5 @@ class SessionExercise extends Model {
     protected $fillable = [
         'session_id', 'exercise_id'
     ];
-
 
 }
