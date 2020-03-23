@@ -1,5 +1,6 @@
-## Neuronation Coding Challenge  
+## Coding Challenge  
 
+Please clone the repo and follow instruction for project setup.
 
 ### Setup
 
@@ -13,6 +14,11 @@ docker-compose up -d
 docker run --rm --interactive --tty --volume $PWD/project:/app --volume $COMPOSER_HOME:/tmp composer install
 ```
 
+- check service online at:
+```
+http://localhost:8182/
+```
+
 - run migrations
 ```
 docker-compose exec php ./artisan migrate
@@ -22,6 +28,13 @@ docker-compose exec php ./artisan migrate
 ```
 docker-compose exec php ./artisan db:seed
 ```
+
+- api routes
+```
+http://localhost:8182/api/v1/user/history/1
+http://localhost:8182/api/v1/user/recent-trained/1
+```
+
 
 
 ## Tests
