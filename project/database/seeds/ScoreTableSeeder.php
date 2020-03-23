@@ -12,9 +12,10 @@ class ScoreTableSeeder extends Seeder
      */
     public function run()
     {
+        factory(Score::class, 100)->create();
         // inserting 200 per iteration (=100k)
-        for ($i=0; $i < 5000; $i++) {
-            factory(Score::class, 200)->create();
-        }
+//        for ($i=0; $i < 5000; $i++) {
+//            factory(Score::class, 200)->create();
+//        }
     }
 }

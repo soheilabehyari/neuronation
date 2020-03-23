@@ -12,6 +12,6 @@ class ExerciseTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(Exercise::class, 60)->create();
+        factory(Exercise::class, 30)->create();
     }
 }
