@@ -19,6 +19,11 @@ docker run --rm --interactive --tty --volume $PWD/project:/app --volume $COMPOSE
 http://localhost:8182/
 ```
 
+- config env file for database connection 
+```
+cp project/.env.example project/.env
+```
+
 - run migrations
 ```
 docker-compose exec php ./artisan migrate
