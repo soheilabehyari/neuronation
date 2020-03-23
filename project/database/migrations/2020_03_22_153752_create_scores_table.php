@@ -17,6 +17,8 @@ class CreateScoresTable extends Migration
             $table->increments('id');
             $table->integer('session_id')->unsigned()->nullable(false);
             $table->float('score', 8, 2);
+            $table->date('start_difficulty');
+            $table->date('end_difficulty');
             $table->timestamps();
         });
 
